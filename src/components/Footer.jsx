@@ -10,8 +10,8 @@ const contacts = [
   },
   {
     label: 'GitHub',
-    value: 'Bigpapa6969',
-    href: 'https://github.com/Bigpapa6969',
+    value: 'JoeCooksey',
+    href: 'https://github.com/JoeCooksey',
     icon: Github,
     primary: false,
   },

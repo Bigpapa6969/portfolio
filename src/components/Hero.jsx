@@ -92,7 +92,7 @@ export default function Hero() {
           {/* Status badge */}
           <div className="inline-flex items-center gap-2 mb-8">
             <span className="signal-dot font-mono text-xs text-signal tracking-widest uppercase">
-              Available for 2025 internships
+              Available for 2026 internships
             </span>
           </div>
 
@@ -121,7 +121,7 @@ export default function Hero() {
           {/* CTA Buttons */}
           <div className="flex flex-wrap gap-3">
             <a
-              href="https://github.com/Bigpapa6969"
+              href="https://github.com/JoeCooksey"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 bg-surface border border-border hover:border-border-bright text-prose px-4 py-2.5 rounded text-sm font-medium transition-all hover:bg-surface-2"
@@ -146,7 +146,7 @@ export default function Hero() {
               Email
             </a>
             <a
-              href="/resume.pdf"
+              href="/Resume.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 bg-signal text-ink px-4 py-2.5 rounded text-sm font-semibold transition-all hover:opacity-90"

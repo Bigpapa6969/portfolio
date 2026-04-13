@@ -14,7 +14,7 @@ const projects = [
       'Exported pass/fail summaries and PDF reports',
     ],
     tech: ['Python', 'FastAPI', 'NumPy', 'pandas', 'Plotly', 'PyQt', 'ReportLab'],
-    github: 'https://github.com/Bigpapa6969/lab-measurement-platform',
+    github: 'https://github.com/JoeCooksey/lab-measurement-platform',
     demo: 'https://lab-measurement-platform.vercel.app',
     featured: true,
     domain: 'Test Automation',
@@ -32,7 +32,7 @@ const projects = [
       'Rendered exportable circuit schematics and diagrams',
     ],
     tech: ['Python', 'NumPy', 'SciPy', 'matplotlib'],
-    github: 'https://github.com/Bigpapa6969/circuit-simulator',
+    github: 'https://github.com/JoeCooksey/circuit-simulator',
     demo: 'https://circuit-simulator-gilt.vercel.app',
     featured: false,
     domain: 'Circuit Analysis',
@@ -141,7 +141,7 @@ export default function Projects() {
             </p>
           </div>
           <a
-            href="https://github.com/Bigpapa6969"
+            href="https://github.com/JoeCooksey"
             target="_blank"
             rel="noopener noreferrer"
             className="hidden sm:inline-flex items-center gap-2 font-mono text-xs text-muted hover:text-signal transition-colors tracking-widest uppercase whitespace-nowrap"
