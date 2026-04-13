@@ -17,8 +17,8 @@ const contacts = [
   },
   {
     label: 'LinkedIn',
-    value: 'linkedin.com/in/yourprofile',
-    href: 'https://linkedin.com/in/yourprofile',
+    value: 'joe-cooksey-35a7b4206',
+    href: 'https://www.linkedin.com/in/joe-cooksey-35a7b4206/',
     icon: Linkedin,
     primary: false,
   },
@@ -50,11 +50,10 @@ export default function Footer() {
                 href={href}
                 target={href.startsWith('http') ? '_blank' : undefined}
                 rel={href.startsWith('http') ? 'noopener noreferrer' : undefined}
-                className={`group flex items-center gap-4 p-4 rounded-lg border transition-all ${
-                  primary
-                    ? 'bg-signal-dim border-signal/20 hover:bg-signal/15 hover:border-signal/40'
-                    : 'bg-surface border-border hover:border-border-bright hover:bg-surface-2'
-                }`}
+                className={`group flex items-center gap-4 p-4 rounded-lg border transition-all ${primary
+                  ? 'bg-signal-dim border-signal/20 hover:bg-signal/15 hover:border-signal/40'
+                  : 'bg-surface border-border hover:border-border-bright hover:bg-surface-2'
+                  }`}
               >
                 <Icon
                   size={16}
@@ -71,9 +70,8 @@ export default function Footer() {
                 </div>
                 <ArrowUpRight
                   size={13}
-                  className={`flex-shrink-0 opacity-0 group-hover:opacity-100 transition-opacity ${
-                    primary ? 'text-signal' : 'text-muted'
-                  }`}
+                  className={`flex-shrink-0 opacity-0 group-hover:opacity-100 transition-opacity ${primary ? 'text-signal' : 'text-muted'
+                    }`}
                 />
               </a>
             ))}

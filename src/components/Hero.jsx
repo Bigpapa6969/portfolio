@@ -130,7 +130,7 @@ export default function Hero() {
               GitHub
             </a>
             <a
-              href="https://linkedin.com/in/yourprofile"
+              href="https://www.linkedin.com/in/joe-cooksey-35a7b4206/"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 bg-surface border border-border hover:border-border-bright text-prose px-4 py-2.5 rounded text-sm font-medium transition-all hover:bg-surface-2"
