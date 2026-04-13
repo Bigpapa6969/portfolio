@@ -1,0 +1,86 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: #050810;
+    color: #c8d4e0;
+    font-family: 'IBM Plex Sans', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  ::selection {
+    background: rgba(0, 200, 150, 0.2);
+    color: #e8f4f0;
+  }
+}
+
+@layer utilities {
+  .graph-paper {
+    background-image:
+      linear-gradient(rgba(0, 200, 150, 0.04) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(0, 200, 150, 0.04) 1px, transparent 1px),
+      linear-gradient(rgba(0, 200, 150, 0.015) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(0, 200, 150, 0.015) 1px, transparent 1px);
+    background-size: 80px 80px, 80px 80px, 16px 16px, 16px 16px;
+    background-position: -1px -1px, -1px -1px, -1px -1px, -1px -1px;
+  }
+
+  .text-signal-gradient {
+    background: linear-gradient(135deg, #00c896 0%, #00a0ff 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .card-hover {
+    transition: border-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
+  }
+
+  .card-hover:hover {
+    border-color: rgba(0, 200, 150, 0.3);
+    box-shadow: 0 0 0 1px rgba(0, 200, 150, 0.1), 0 8px 32px rgba(0, 0, 0, 0.4);
+    transform: translateY(-1px);
+  }
+
+  .signal-dot::before {
+    content: '';
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    background: #00c896;
+    border-radius: 50%;
+    margin-right: 8px;
+    box-shadow: 0 0 8px rgba(0, 200, 150, 0.6);
+    animation: pulse-signal 2s ease-in-out infinite;
+  }
+
+  @keyframes pulse-signal {
+    0%, 100% { opacity: 1; box-shadow: 0 0 8px rgba(0, 200, 150, 0.6); }
+    50% { opacity: 0.6; box-shadow: 0 0 4px rgba(0, 200, 150, 0.3); }
+  }
+
+  .label-tag {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.65rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #00c896;
+    font-weight: 500;
+  }
+
+  .section-divider {
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(0, 200, 150, 0.2) 20%, rgba(0, 200, 150, 0.2) 80%, transparent);
+  }
+}
