@@ -37,6 +37,23 @@ const projects = [
     featured: false,
     domain: 'Circuit Analysis',
   },
+  {
+    id: '03',
+    title: 'ML Journey: MOSFET Rds(on) Predictor',
+    tagline: 'Learning machine learning from first principles in NumPy',
+    description:
+      'A from-scratch path into machine learning — no scikit-learn, just NumPy and the math. Builds from manual grid search up to a complete model-selection workflow that predicts a power MOSFET’s on-resistance from its operating conditions.',
+    bullets: [
+      'Implemented linear regression, gradient descent, and L2 regularization by hand',
+      'Built a train/validation/test pipeline with leakage-safe feature scaling',
+      'Tuned lambda on validation RMSE and chose the simpler model that performed as well',
+      'Used signed residuals and residual plots to catch under-prediction and bias',
+    ],
+    tech: ['Python', 'NumPy', 'matplotlib'],
+    github: 'https://github.com/JoeCooksey/ml-journey',
+    featured: false,
+    domain: 'Machine Learning',
+  },
 ]
 
 function ProjectCard({ project }) {
@@ -109,15 +126,17 @@ function ProjectCard({ project }) {
             <Github size={13} strokeWidth={1.5} />
             Source
           </a>
-          <a
-            href={project.demo}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-1.5 text-xs font-mono text-signal hover:text-signal/80 transition-colors uppercase tracking-widest"
-          >
-            <ExternalLink size={13} strokeWidth={1.5} />
-            Live Demo
-          </a>
+          {project.demo && (
+            <a
+              href={project.demo}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-1.5 text-xs font-mono text-signal hover:text-signal/80 transition-colors uppercase tracking-widest"
+            >
+              <ExternalLink size={13} strokeWidth={1.5} />
+              Live Demo
+            </a>
+          )}
         </div>
       </div>
     </article>
